@@ -1,1 +1,1 @@
-web: knex --knexfile knexfile.js seed:run && knex --knexfile knexfile.js migrate:latest && yarn start
+web: knex --knexfile dist/knexfile.js seed:run && knex --knexfile dist/knexfile.js migrate:latest && yarn start
