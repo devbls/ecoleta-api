@@ -14,4 +14,4 @@ app.use(express_1.default.json());
 app.use(routes_1.default);
 app.use('/uploads', express_1.default.static(path_1.default.resolve(__dirname, '..', 'uploads')));
 app.use(celebrate_1.errors());
-app.listen(3333);
+app.listen(process.env.PORT || 3333);
